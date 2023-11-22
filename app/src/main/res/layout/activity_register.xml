@@ -32,7 +32,8 @@
             android:text="Daftar Akun"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
