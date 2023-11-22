@@ -50,7 +50,7 @@
             android:padding="28dp">
 
             <View
-                android:layout_width="wrap_content"
+                android:layout_width="340dp"
                 android:layout_height="30dp"/>
 
             <TextView
@@ -61,10 +61,10 @@
                 android:textStyle="bold"/>
 
             <EditText
-                android:layout_width="355dp"
+                android:layout_width="334dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:layout_marginTop="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/edit_text"
                 android:drawableEnd="@drawable/email_icon"
                 android:drawablePadding="15dp"
@@ -87,10 +87,10 @@
                 android:textStyle="bold"/>
 
             <EditText
-                android:layout_width="355dp"
+                android:layout_width="334dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:layout_marginTop="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/edit_text"
                 android:drawableEnd="@drawable/password_icon"
                 android:drawablePadding="15dp"
@@ -99,8 +99,7 @@
                 android:hint="Masukkan kata sandi"
                 android:inputType="textPersonName"
                 android:padding="10dp"
-                android:textSize="14sp"
-                />
+                android:textSize="14sp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -121,7 +120,7 @@
 
                 <AutoCompleteTextView
                     android:id="@+id/auto_complete_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="334dp"
                     android:layout_height="50dp"
                     android:inputType="none"
                     android:backgroundTint="@color/white"/>
