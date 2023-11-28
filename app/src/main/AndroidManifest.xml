@@ -13,9 +13,20 @@
         android:theme="@style/Theme.Massive_LesUng"
         tools:targetApi="31">
         <activity
+            android:name=".GuruHomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruNotoficationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationGuruActivity"
+            android:exported="false" />
+        <activity
             android:name=".chat"
             android:exported="false" />
-
         <activity
             android:name=".daftarchat"
             android:exported="false" />
