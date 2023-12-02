@@ -71,7 +71,6 @@
                 android:drawableTop="@drawable/icon_guru_setting_profile_top"
                 app:cornerRadius="5dp"
                 />
-
         </LinearLayout>
 
         <!--circle profile-->

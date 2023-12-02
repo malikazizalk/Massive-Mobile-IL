@@ -17,7 +17,7 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
     <RelativeLayout
         android:id="@+id/rv_card_guru"
         android:layout_width="match_parent"
-        android:layout_height="235dp"
+        android:layout_height="260dp"
         android:layout_marginTop="-20dp"
         android:background="@drawable/guru_homepage_top">
 
@@ -41,9 +41,8 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
                 />
 
             <TextView
-                android:layout_width="320dp"
+                android:layout_width="300dp"
                 android:layout_height="match_parent"
-                android:text="Kelas Berlangsung"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -51,34 +50,41 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
                 />
 
             <!--arrow back-->
-            <!--                <com.google.android.material.button.MaterialButton-->
-            <!--                    android:layout_width="35dp"-->
-            <!--                    android:layout_height="40dp"-->
-            <!--                    android:gravity="center"-->
-            <!--                    android:backgroundTint="@color/primary"-->
-            <!--                    android:layout_marginRight="20dp"-->
-            <!--                    android:drawableTop="@drawable/icon_guru_setting_profile_top"-->
-            <!--                    app:cornerRadius="5dp"-->
-            <!--                    />-->
-
-            <TextView
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:layout_marginTop="-29dp"
                 android:backgroundTint="@color/primary"
                 android:layout_marginRight="20dp"
-                app:cornerRadius="5dp"/>
-
-
+                android:drawableTop="@drawable/icon_guru_chat_notif_kelas_berlangsung"
+                app:cornerRadius="5dp"
+                />
         </LinearLayout>
+
+        <!--circle profile-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+            <!--arrow back-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/guru"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </RelativeLayout>
 
 
         <!--text nama dan subjek-->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
             android:orientation="vertical">
 
             <!--Nama-->
@@ -86,34 +92,12 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="Nama Ortu"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text=":"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
                     android:text="Sri Irawati"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="17sp"
                     android:textStyle="bold"
                     />
             </LinearLayout>
@@ -124,182 +108,89 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="Subjek"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text=":"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="Teknologi Informasi dan Komputer"
+                    android:text="TIK"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:textStyle="bold"
                     />
             </LinearLayout>
+        </LinearLayout>
 
-            <!--total sesi-->
+        <!--total sesi-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <!--bar progres-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/bar_progress_bg">
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bar_progress"/>
+            </RelativeLayout>
+
+            <!--Total session-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="Total Sesi"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
-
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="1dp"
-                    android:text="7/8"
+                    android:layout_gravity="center"
+                    android:text="Total Session 2/8"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:textStyle="bold"
                     />
-            </LinearLayout>
-
-            <!-- button circle total sesi-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:orientation="horizontal">
-
-                <!--button sesi 1-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="3dp"
-                    android:drawableTop="@drawable/mdi_number_1_circle"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 2-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_2_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 3-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_3_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 4-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_4_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 5-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_5_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 6-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_6_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 7-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_7_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
-                <!--button sesi 8-->
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="35dp"
-                    android:layout_height="40dp"
-                    android:gravity="center"
-                    android:backgroundTint="@color/primary"
-                    android:layout_marginLeft="15dp"
-                    android:drawableTop="@drawable/mdi_number_8_circle_outline"
-                    app:cornerRadius="5dp"
-                    />
-
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Total Session"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="12sp"-->
+                <!--                        />-->
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 
-    <!--text sesi sedang berlangsung-->
-    <TextView
+    <!--button buat laporan -->
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:text="Sesi berlangsung telah dikonfirmasi !"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#CAD4F5"
+        android:text="Buat Laporan"
         android:textColor="@color/black"
         android:textSize="15sp"
+        app:cornerRadius="10dp"
+        android:drawableLeft="@drawable/icon_guru_buat_laporan"
         />
+
 
     <!--text laporan pembelajaran-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="25dp"
         android:text="Laporan Pembelajaran"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -319,14 +210,14 @@ tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:orientation="vertical">
 
             <!--bg card konfirmasi 1-->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_height="150dp"
                 android:background="@drawable/guru_card_sedang_berlangsung">
 
                 <LinearLayout
@@ -394,27 +285,23 @@ consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
                                 />
 
                         </RelativeLayout>
-
                     </LinearLayout>
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
-                    <!--button konfirmasi kelas berlangsung-->
-                    <com.google.android.material.button.MaterialButton
+                    <!--text konfirmasi kelas berlangsung-->
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="3.5dp"
-                        android:layout_marginLeft="55dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="155dp"
                         android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
                         android:text="Menunggu Konfirmasi"
                         app:cornerRadius="20dp"
                         />
-
                 </LinearLayout>
-
             </RelativeLayout>
 
 
@@ -426,8 +313,6 @@ consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
                 app:cardElevation="5dp"
                 app:cardCornerRadius="10dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="25dp"
                 >
 
                 <LinearLayout
