@@ -3,15 +3,15 @@
     <item
         android:id="@+id/button_home"
         android:title=""
-        android:icon="@drawable/icon_home_black"/>
+        android:icon="@drawable/icon_home_solid"/>
 
     <item
         android:id="@+id/button_message"
         android:title=""
-        android:icon="@drawable/icon_message"/>
+        android:icon="@drawable/icon_chat_stroke"/>
 
     <item
         android:id="@+id/button_user"
         android:title=""
-        android:icon="@drawable/icon_user"/>
+        android:icon="@drawable/icon_profile_stroke"/>
 </menu>
