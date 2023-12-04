@@ -74,6 +74,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nama"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textPersonName"/>
@@ -92,6 +93,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textEmailAddress"/>
@@ -111,6 +113,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_number"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="number"/>
@@ -129,6 +132,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_pass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textVisiblePassword"/>
@@ -147,6 +151,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comfirmpass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textVisiblePassword"/>
@@ -157,7 +162,7 @@
                 android:layout_height="30dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_signup"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"

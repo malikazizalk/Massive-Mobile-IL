@@ -73,6 +73,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textEmailAddress"/>
@@ -91,12 +92,14 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_pass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/forget"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -193,6 +196,7 @@
                     android:text="Dont have an account?"/>
 
                 <TextView
+                    android:id="@+id/signup"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
