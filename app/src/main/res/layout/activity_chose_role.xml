@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoseRoleActivity">
+
+    <!-- start liniear layout entire screen  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--    button top    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <!--arrow back-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:drawableTop="@drawable/arrow_back"
+                app:cornerRadius="5dp"
+                />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="-29dp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginRight="20dp"
+                app:cornerRadius="5dp"/>
+        </LinearLayout>
+
+
+        <!--    ll kelas berlangsung    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chose your role"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Are you looking for a teacher or
+looking for a student"
+                android:layout_gravity="center"
+                android:textColor="#90000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--    card role student      -->
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chose_role"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                >
+                <!-- card view -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!--logo-->
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/roleTeach"
+                        android:layout_width="75dp"
+                        android:layout_height="83dp"
+                        app:cornerRadius="50dp"
+                        android:paddingTop="23dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#CAD4F5"
+                        android:drawableTop="@drawable/find_teacher"/>
+
+
+                    <!--text 1-->
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find a teacher"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!--text 2-->
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="It’s easy to find your teacher here with us."
+                        android:textColor="#90000000"
+                        android:textSize="15sp"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--    card role student      -->
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chose_role"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                >
+                <!-- card view -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!--logo-->
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/roleStudent"
+                            android:layout_width="75dp"
+                            android:layout_height="83dp"
+                            app:cornerRadius="50dp"
+                            android:paddingTop="23dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="@color/primary"
+                            android:drawableTop="@drawable/find_student"/>
+
+
+                        <!--text 1-->
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Find a student"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            />
+
+                        <!--text 2-->
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="It’s easy to find your student here with us."
+                            android:textColor="#90000000"
+                            android:textSize="15sp"
+                            />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- start liniear layout entire screen  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

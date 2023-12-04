@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".LengkapiDokumenActivity">
+
+
+    <!--    button top    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/primary"
+        android:orientation="horizontal">
+        <!--arrow back-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:backgroundTint="@color/primary"
+            android:layout_marginLeft="20dp"
+            android:drawableTop="@drawable/arrow_back_white"
+            app:cornerRadius="5dp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="Lengkapi Dokumen"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="-29dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginRight="20dp"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!--full name-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pendidikan Terakhir"
+                android:textColorHint="@color/primary"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="1dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--upload cv-->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Upload CV*"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+                        <!--    card role student      -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="@drawable/upload_dokumen_bg"
+                            >
+                            <!-- card view -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <!--logo-->
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="75dp"
+                                    android:layout_height="63dp"
+                                    android:paddingTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:backgroundTint="#00000000"
+                                    android:drawableTop="@drawable/upload_doc"/>
+
+                                <!--text 2-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-15dp"
+                                    android:gravity="center"
+                                    android:text="Upload File"
+                                    android:textColor="@color/black"
+                                    android:alpha="0.5"
+                                    android:textSize="14sp"
+                                    />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+            </LinearLayout>
+
+            <!--upload cv-->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sertifikat Pendukung*"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+                <!--    card role student      -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/upload_dokumen_bg"
+                    >
+                    <!-- card view -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!--logo-->
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="75dp"
+                            android:layout_height="63dp"
+                            android:paddingTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#00000000"
+                            android:drawableTop="@drawable/upload_doc"/>
+
+                        <!--text 2-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-15dp"
+                            android:gravity="center"
+                            android:text="Upload File"
+                            android:textColor="@color/black"
+                            android:alpha="0.5"
+                            android:textSize="14sp"
+                            />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--upload cv-->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Personal Branding Video.Mp4*"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+                <!--    card role student      -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/upload_dokumen_bg"
+                    >
+                    <!-- card view -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!--logo-->
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="75dp"
+                            android:layout_height="63dp"
+                            android:paddingTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#00000000"
+                            android:drawableTop="@drawable/upload_doc"/>
+
+                        <!--text 2-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-15dp"
+                            android:gravity="center"
+                            android:text="Upload File"
+                            android:textColor="@color/black"
+                            android:alpha="0.5"
+                            android:textSize="14sp"
+                            />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Submit"
+                app:cornerRadius="60dp"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
