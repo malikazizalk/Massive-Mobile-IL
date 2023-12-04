@@ -28,13 +28,15 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:paddingTop="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_guru"
-        android:background="@color/primary"
-        app:itemIconTint="@color/white"
-        app:itemIconSize="30dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/primary"
+        app:itemIconSize="35dp"
         app:itemActiveIndicatorStyle="@style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator"
         />
 
@@ -51,21 +53,51 @@
             android:layout_height="150dp"
             android:background="@drawable/guru_homepage_top">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
-
-                <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="20dp"
+                android:background="@color/primary"
+                android:orientation="horizontal">
+                <TextView
                     android:layout_width="35dp"
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="-29dp"
+                    android:backgroundTint="@color/primary"
+                    android:layout_marginLeft="20dp"
+                    app:cornerRadius="5dp"/>
+<!--                &lt;!&ndash;arrow back&ndash;&gt;-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:backgroundTint="@color/primary"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:drawableTop="@drawable/arrow_back"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    />-->
+                <TextView
+                    android:layout_width="285dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <!--button bell notifikasi-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_notif"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:backgroundTint="#20ffffff"
-                    android:layout_marginLeft="360dp"
                     android:drawableTop="@drawable/notification_guru"
                     app:cornerRadius="5dp"
                     />
-            </RelativeLayout>
+            </LinearLayout>
+
             <!-- circle image guru -->
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="90dp"
@@ -81,7 +113,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -92,7 +123,6 @@
                     android:textSize="17sp"
                     android:textStyle="bold"
                     />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -104,84 +134,43 @@
                     android:textStyle="bold"
                     />
             </LinearLayout>
-
         </RelativeLayout>
 
-        <!-- start RV ongoing  -->
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <!-- bg button -->
+        <LinearLayout
+            android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
-            >
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/guru_ongoing_complete">
 
-            <!-- bg card ongoing dan complete -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/guru_ongoing_complete"
-                android:alpha="0.5">
-
-                <TextView
-                    android:layout_width="175dp"
-                    android:layout_height="wrap_content"
-                    android:text="Ongoing"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:textColor="@color/black"
-                    android:alpha="0.5"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="175dp"
-                    android:layout_height="wrap_content"
-                    android:text="Complete"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:textColor="@color/black"
-                    android:alpha="0.5"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- start button ongoing & complete  -->
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="175dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:textSize="20sp"
-                        android:text="Ongoing"
-                        app:cornerRadius="12dp"
-                        />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="175dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:textSize="20sp"
-                        android:alpha="0.1"
-                        android:textColor="@color/black"
-                        android:text="Complete"
-                        app:cornerRadius="12dp"
-                        />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </RelativeLayout>
+            <!--button ongoing -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="177dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:backgroundTint="@color/primary"
+                android:text="Ongoing"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:cornerRadius="50dp" />
+            <!--button Complete-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="177dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:backgroundTint="#00000000"
+                android:text="Complete"
+                android:textColor="#616C8F"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:cornerRadius="50dp" />
+        </LinearLayout>
 
         <!--  start card data ongoing -->
         <ScrollView
@@ -194,6 +183,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:orientation="vertical">
@@ -206,8 +197,6 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="25dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -339,8 +328,6 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="25dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -472,8 +459,6 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="25dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -605,8 +590,6 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="25dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -738,8 +721,6 @@
                     app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="25dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView

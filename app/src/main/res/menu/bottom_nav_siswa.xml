@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/button_home"
+        android:title=""
+        android:icon="@drawable/icon_home_stroke"/>
+
+    <item
+        android:id="@+id/button_message"
+        android:title=""
+        android:icon="@drawable/icon_chat_stroke"/>
+
+    <item
+        android:id="@+id/button_notif"
+        android:title=""
+        android:icon="@drawable/icon_notification_stroke"/>
+
+    <item
+        android:id="@+id/button_user"
+        android:title=""
+        android:icon="@drawable/icon_profile_stroke"/>
+</menu>

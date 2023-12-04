@@ -13,6 +13,48 @@
         android:theme="@style/Theme.Massive_LesUng"
         tools:targetApi="31">
         <activity
+            android:name=".SiswaHomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LengkapiDokumenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChoseRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruInformasiSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruPengaturanMengajarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruPenilaianSiswaDidikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruPenialaianSiswaDidikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruKelasBerlangsungKonfirmasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruKelasBerlangsungActivity"
+            android:exported="false" />
+        <activity
             android:name=".GuruHomepageActivity"
             android:exported="false" />
         <activity
@@ -40,10 +82,10 @@
             android:name=".profile"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".SigninActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
