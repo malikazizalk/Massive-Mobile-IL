@@ -4,16 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
 class SignupActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var etUsername: EditText
-    private lateinit var etemail:EditText
-    private lateinit var etnohp:EditText
-    private lateinit var etPassword:EditText
-    private lateinit var etComfirmPassword:EditText
+    private lateinit var etUsername: TextInputEditText
+    private lateinit var etemail:TextInputEditText
+    private lateinit var etnohp:TextInputEditText
+    private lateinit var etPassword:TextInputEditText
+    private lateinit var etComfirmPassword:TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,16 +22,16 @@ class SignupActivity : AppCompatActivity(), View.OnClickListener {
         etUsername = findViewById(R.id.edt_nama)
         etemail = findViewById(R.id.edt_email)
         etPassword = findViewById(R.id.edt_pass)
-        etnohp = findViewById(R.id.edt_nohp)
-        etComfirmPassword = findViewById(R.id.edt_comfirm_pass)
+        etnohp = findViewById(R.id.edt_number)
+        etComfirmPassword = findViewById(R.id.comfirmpass)
 
-        val btnRegister: Button = findViewById(R.id.btn_register)
-        btnRegister.setOnClickListener(this)
+        val btnSignup1: Button = findViewById(R.id.btn_signup)
+        btnSignup1.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id){
-            R.id.btn_register -> {
+            R.id.btn_signup-> {
 
                 val bundle = Bundle()
                 bundle.putString("Username", etUsername.text.toString())

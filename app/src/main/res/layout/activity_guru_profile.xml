@@ -63,6 +63,7 @@
 
             <!--arrow back-->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit"
                 android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:gravity="center"
@@ -223,6 +224,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 android:layout_height="20dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/informasi"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="#BAC3E1"
@@ -238,6 +240,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 android:layout_height="15dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/setStud"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/primary"
