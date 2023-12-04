@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
                 val bundle = Bundle()
                 bundle.putString("Email", etemail.text.toString())
                 bundle.putString("Password", etPassword.text.toString())
-                val intent = Intent(this@LoginActivity, HomepageGuruActivity::class.java)
+                val intent = Intent(this@LoginActivity, GuruHomepageActivity::class.java)
                 intent.putExtras(bundle)
                 startActivity(intent)
             }

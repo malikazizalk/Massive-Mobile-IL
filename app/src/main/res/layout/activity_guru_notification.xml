@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuruNotificationActivity">
+
+    <!-- start liniear layout entire screen  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--    ll kelas berlangsung    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!--arrow back-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:drawableTop="@drawable/arrow_back"
+                app:cornerRadius="5dp"
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:text="Notifikasi"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <!--arrow back-->
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:gravity="center"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:drawableTop="@drawable/icon_guru_setting_profile_top"-->
+<!--                app:cornerRadius="5dp"-->
+<!--                />-->
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="-29dp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginRight="20dp"
+                app:cornerRadius="5dp"/>
+
+
+        </LinearLayout>
+
+        <!--  start data notifikasi -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <!-- data 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity=""
+                    android:padding="15dp"
+                    android:background="@drawable/guru_notification_card1"
+                    android:text="Anda mendapat tawaran baru untuk mengajar,
+segera lakukan konfirmasi untuk..."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+                <!-- data 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity=""
+                    android:padding="15dp"
+                    android:background="@drawable/guru_notification_card2"
+                    android:text="Anda mendapat tawaran baru untuk mengajar,
+segera lakukan konfirmasi untuk..."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+        <!--  end data notifikasi -->
+
+    </LinearLayout>
+    <!-- start liniear layout entire screen  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,32 +13,61 @@
         android:theme="@style/Theme.Massive_LesUng"
         tools:targetApi="31">
         <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LengkapiDokumenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChoseRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruInformasiSayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruPengaturanMengajarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruPenilaianSiswaDidikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruKelasBerlangsungKonfirmasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruKelasBerlangsungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruHomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuruNotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".chat"
             android:exported="false" />
-
         <activity
             android:name=".daftarchat"
             android:exported="false" />
         <activity
-            android:name=".Profile2"
+            android:name=".SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".HomepageGuruActivity"
-            android:exported="false" />
+            android:name=".SigninActivity"
+            android:exported="false"/>
         <activity
-            android:name=".profile"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ScreenActivity"
             android:exported="true">
             >
             <intent-filter>

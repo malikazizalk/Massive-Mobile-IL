@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuruPenilaianSiswaDidikActivity">
+
+
+    <!-- start liniear layout entire screen  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:orientation="vertical">
+
+        <!--   Shadow    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/shadow">
+
+            <!--    top card kelas berlangsung    -->
+            <RelativeLayout
+                android:id="@+id/rv_card_guru"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/guru_homepage_top">
+
+                <!--    ll kelas berlangsung    -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/primary"
+                    android:orientation="horizontal">
+
+                    <!--arrow back-->
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:backgroundTint="@color/primary"
+                        android:layout_marginLeft="20dp"
+                        android:drawableTop="@drawable/arrow_back_white"
+                        app:cornerRadius="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="320dp"
+                        android:layout_height="match_parent"
+                        android:text="Laporan Sesi 3"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!--arrow back-->
+                    <!--                <com.google.android.material.button.MaterialButton-->
+                    <!--                    android:layout_width="35dp"-->
+                    <!--                    android:layout_height="40dp"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:backgroundTint="@color/primary"-->
+                    <!--                    android:layout_marginRight="20dp"-->
+                    <!--                    android:drawableTop="@drawable/icon_guru_setting_profile_top"-->
+                    <!--                    app:cornerRadius="5dp"-->
+                    <!--                    />-->
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginTop="-29dp"
+                        android:backgroundTint="@color/primary"
+                        android:layout_marginRight="20dp"
+                        app:cornerRadius="5dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--section card lopran belajar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/guru_card_edit_penilaian_siswa"
+            android:orientation="vertical">
+
+        <!--  start card edit data laporan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/guru_card_edit_penilaian_siswa"
+                android:orientation="vertical">
+
+                <!--edit text button-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="312dp"
+                    android:drawableTop="@drawable/guru_edit_laporan_sesi"
+                    app:cornerRadius="5dp"
+                    />
+
+                <!--masukkan isi laporan-->
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_penilaian_siswa_didik"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        <!--  end data laporan -->
+
+            <!--button submit laporan-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="Submit"
+            app:cornerRadius="60dp"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- start liniear layout entire screen  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

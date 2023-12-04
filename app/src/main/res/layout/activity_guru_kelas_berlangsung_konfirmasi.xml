@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".GuruKelasBerlangsungKonfirmasiActivity">
+
+
+<!-- start liniear layout entire screen  -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    top card kelas berlangsung    -->
+    <RelativeLayout
+        android:id="@+id/rv_card_guru"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/guru_homepage_top">
+
+        <!--    ll kelas berlangsung    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/primary"
+            android:orientation="horizontal">
+
+            <!--arrow back-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/primary"
+                android:layout_marginLeft="20dp"
+                android:drawableTop="@drawable/arrow_back_white"
+                app:cornerRadius="5dp"
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <!--arrow back-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/primary"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@drawable/icon_guru_chat_notif_kelas_berlangsung"
+                app:cornerRadius="5dp"
+                />
+        </LinearLayout>
+
+        <!--circle profile-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+            <!--arrow back-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/guru"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </RelativeLayout>
+
+
+        <!--text nama dan subjek-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <!--Nama-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sri Irawati"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!--Subjek-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIK"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--total sesi-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <!--bar progres-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/bar_progress_bg">
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bar_progress"/>
+            </RelativeLayout>
+
+            <!--Total session-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Total Session 2/8"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Total Session"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="12sp"-->
+                <!--                        />-->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--button buat laporan -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#CAD4F5"
+        android:text="Buat Laporan"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        android:drawableLeft="@drawable/icon_guru_buat_laporan"
+        />
+
+
+    <!--text laporan pembelajaran-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Laporan Pembelajaran"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <!--  start card data laporan -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <!--bg card konfirmasi 1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/guru_card_sedang_berlangsung">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+            <!-- card data view scroll 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardBackgroundColor="#F4F4F4"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--text header card laporan sesi-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Laporan sesi 7"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!--isi card-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <!--text-->
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:gravity=""
+                            android:layout_marginLeft="10dp"
+                            android:text="Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <!--button next-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--arrow back-->
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="#F4F4F4"
+                                android:paddingLeft="-10dp"
+                                android:paddingTop="10dp"
+                                android:drawableTop="@drawable/arrow_next"
+                                app:cornerRadius="5dp"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                    <!--text konfirmasi kelas berlangsung-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="155dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:text="Menunggu Konfirmasi"
+                        app:cornerRadius="20dp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!-- card data view scroll 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardBackgroundColor="#F4F4F4"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--text header card laporan sesi-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Laporan sesi 7"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!--isi card-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <!--text-->
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:gravity=""
+                            android:layout_marginLeft="10dp"
+                            android:text="Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <!--button next-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--arrow back-->
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="#F4F4F4"
+                                android:paddingLeft="-10dp"
+                                android:paddingTop="10dp"
+                                android:drawableTop="@drawable/arrow_next"
+                                app:cornerRadius="5dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!--  end card data ongoing -->
+
+</LinearLayout>
+<!-- start liniear layout entire screen  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,6 @@
 package com.example.massive_lesung
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 class HomepageGuruActivity : AppCompatActivity()  {
