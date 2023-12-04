@@ -11,6 +11,11 @@
         android:icon="@drawable/icon_chat_stroke"/>
 
     <item
+        android:id="@+id/button_notif"
+        android:title=""
+        android:icon="@drawable/icon_notification_stroke"/>
+
+    <item
         android:id="@+id/button_user"
         android:title=""
         android:icon="@drawable/icon_profile_stroke"/>

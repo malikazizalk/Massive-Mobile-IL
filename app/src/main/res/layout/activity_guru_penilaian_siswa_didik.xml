@@ -43,7 +43,7 @@
                         android:gravity="center"
                         android:backgroundTint="@color/primary"
                         android:layout_marginLeft="20dp"
-                        android:drawableTop="@drawable/arrow_back"
+                        android:drawableTop="@drawable/arrow_back_white"
                         app:cornerRadius="5dp"
                         />
 

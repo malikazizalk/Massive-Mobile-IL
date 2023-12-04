@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-class RegisterActivity : AppCompatActivity(), View.OnClickListener {
+class SignupActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var etUsername: EditText
     private lateinit var etemail:EditText
@@ -17,7 +17,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_signup)
 
         etUsername = findViewById(R.id.edt_nama)
         etemail = findViewById(R.id.edt_email)
@@ -41,7 +41,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 bundle.putString("Konirmasi Password", etComfirmPassword.text.toString())
 
 
-                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                val intent = Intent(this@SignupActivity, SigninActivity::class.java)
                 intent.putExtras(bundle)
                 startActivity(intent)
             }

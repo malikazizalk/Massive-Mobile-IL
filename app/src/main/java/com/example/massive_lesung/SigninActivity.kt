@@ -7,12 +7,12 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity : AppCompatActivity(), View.OnClickListener  {
+class SigninActivity : AppCompatActivity(), View.OnClickListener  {
     private lateinit var etemail: EditText
     private lateinit var etPassword:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_signin)
         etemail = findViewById(R.id.edt_email)
         etPassword = findViewById(R.id.edt_pass)
 
@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
                 val bundle = Bundle()
                 bundle.putString("Email", etemail.text.toString())
                 bundle.putString("Password", etPassword.text.toString())
-                val intent = Intent(this@LoginActivity, HomepageGuruActivity::class.java)
+                val intent = Intent(this@SigninActivity, HomepageGuruActivity::class.java)
                 intent.putExtras(bundle)
                 startActivity(intent)
             }

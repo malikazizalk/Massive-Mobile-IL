@@ -31,7 +31,7 @@ tools:context=".GuruInformasiSayaActivity">
             android:gravity="center"
             android:backgroundTint="@color/primary"
             android:layout_marginLeft="20dp"
-            android:drawableTop="@drawable/arrow_back"
+            android:drawableTop="@drawable/arrow_back_white"
             app:cornerRadius="5dp"
             />
 
@@ -60,10 +60,11 @@ tools:context=".GuruInformasiSayaActivity">
 </LinearLayout>
 
 
+    <!--card-->
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="670dp"
         app:cardCornerRadius="28dp"
         android:layout_marginBottom="-20dp"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -87,12 +88,13 @@ tools:context=".GuruInformasiSayaActivity">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="50dp"
+                    android:inputType="text"/> />
             </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="5dp" />
+                android:layout_height="20dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -105,70 +107,15 @@ tools:context=".GuruInformasiSayaActivity">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="50dp"
+                    android:inputType="text"/> />
             </com.google.android.material.textfield.TextInputLayout>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="5dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:orientation="horizontal">
-
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:backgroundTint="@color/primary"
-                        android:text="Lihat Dokumen"
-                        android:textColor="@color/white"
-                        android:textSize="17sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="10dp" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="10dp" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:backgroundTint="@color/primary"
-                        android:text="Ubah Dokumne"
-                        android:textColor="@color/white"
-                        android:textSize="17sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="10dp" />
-                </RelativeLayout>
-            </LinearLayout>
 
 
             <!--    cv    -->
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp" />
+                android:layout_height="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -192,7 +139,7 @@ tools:context=".GuruInformasiSayaActivity">
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="5dp" />
+                    android:layout_height="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -247,93 +194,12 @@ tools:context=".GuruInformasiSayaActivity">
                 </LinearLayout>
             </LinearLayout>
 
-            <!--    Surat Kuliah Aktif    -->
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Surat Aktif Kuliah"
-                    android:textColor="@color/primary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <!--garis panjang-->
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="#80BAC3E1" />
-
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="5dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:orientation="horizontal">
-
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:backgroundTint="@color/primary"
-                            android:text="Lihat Dokumen"
-                            android:textColor="@color/white"
-                            android:textSize="17sp"
-                            android:textStyle="bold"
-                            app:cornerRadius="10dp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <View
-                            android:layout_width="10dp"
-                            android:layout_height="10dp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:backgroundTint="@color/primary"
-                            android:text="Ubah Dokumne"
-                            android:textColor="@color/white"
-                            android:textSize="17sp"
-                            android:textStyle="bold"
-                            app:cornerRadius="10dp" />
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
 
 
             <!--    Surat Pendukung    -->
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp" />
+                android:layout_height="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -344,7 +210,7 @@ tools:context=".GuruInformasiSayaActivity">
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Surat Pendukung"
+                    android:text="Sertifikat Pendukung"
                     android:textColor="@color/primary"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -357,7 +223,7 @@ tools:context=".GuruInformasiSayaActivity">
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="5dp" />
+                    android:layout_height="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -415,7 +281,7 @@ tools:context=".GuruInformasiSayaActivity">
             <!--    Personal Branding.Mp4    -->
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp" />
+                android:layout_height="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -439,7 +305,7 @@ tools:context=".GuruInformasiSayaActivity">
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="5dp" />
+                    android:layout_height="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -496,7 +362,7 @@ tools:context=".GuruInformasiSayaActivity">
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="15dp" />
+                android:layout_height="60dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"

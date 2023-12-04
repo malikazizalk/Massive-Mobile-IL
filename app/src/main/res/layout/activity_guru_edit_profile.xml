@@ -31,7 +31,7 @@ tools:context=".GuruEditProfileActivity">
             android:gravity="center"
             android:backgroundTint="@color/primary"
             android:layout_marginLeft="20dp"
-            android:drawableTop="@drawable/arrow_back"
+            android:drawableTop="@drawable/arrow_back_white"
             app:cornerRadius="5dp"
             />
 
@@ -63,7 +63,7 @@ tools:context=".GuruEditProfileActivity">
 <androidx.cardview.widget.CardView
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="670dp"
     app:cardCornerRadius="28dp"
     android:layout_marginBottom="-20dp"
     app:layout_constraintBottom_toBottomOf="parent">
@@ -120,7 +120,8 @@ tools:context=".GuruEditProfileActivity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -138,7 +139,8 @@ tools:context=".GuruEditProfileActivity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -151,13 +153,15 @@ tools:context=".GuruEditProfileActivity">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
+            app:prefixText="+62 "
             android:textColorHint="@color/primary"
             app:boxStrokeColor="@color/primary"
             app:boxStrokeWidth="2dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -175,7 +179,8 @@ tools:context=".GuruEditProfileActivity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -193,7 +198,8 @@ tools:context=".GuruEditProfileActivity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -211,13 +217,14 @@ tools:context=".GuruEditProfileActivity">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="15dp" />
+            android:layout_height="30dp" />
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -231,7 +238,7 @@ tools:context=".GuruEditProfileActivity">
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="15dp" />
+            android:layout_height="25dp" />
 
     </LinearLayout>
 
