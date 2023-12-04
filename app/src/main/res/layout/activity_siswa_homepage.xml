@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuruKelasBerlangsungActivity">
+    tools:context=".SiswaHomepageActivity">
 
     <!-- start liniear layout entire screen  -->
     <LinearLayout
@@ -156,18 +156,18 @@
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         />
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Total Session"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="12sp"-->
-<!--                        />-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="Total Session"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="12sp"-->
+                    <!--                        />-->
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
 
-<!--button buat laporan -->
+        <!--button buat laporan -->
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -9,20 +9,20 @@
 
     <!-- start bottom navbar  -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_nav_guru"
         android:background="@color/white"
-        app:itemIconTint="@color/primary"
-        app:itemIconSize="35dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:paddingRight="50dp"
         app:itemActiveIndicatorStyle="@style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator"
-        />
+        app:itemIconSize="35dp"
+        app:itemIconTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_guru" />
 
     <!--    ll kelas berlangsung    -->
     <LinearLayout
@@ -125,10 +125,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-20dp"
+        android:layout_height="530dp"
         app:cardCornerRadius="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView3"
         tools:ignore="MissingConstraints">
 
         <LinearLayout

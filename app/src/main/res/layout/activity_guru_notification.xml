@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
 
-        <!--    ll kelas berlangsung    -->
+        <!--    top notifikasi    -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,17 +42,6 @@
                 android:textStyle="bold"
                 />
 
-            <!--arrow back-->
-<!--            <com.google.android.material.button.MaterialButton-->
-<!--                android:layout_width="35dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:gravity="center"-->
-<!--                android:backgroundTint="@color/white"-->
-<!--                android:layout_marginRight="20dp"-->
-<!--                android:drawableTop="@drawable/icon_guru_setting_profile_top"-->
-<!--                app:cornerRadius="5dp"-->
-<!--                />-->
-
             <TextView
                 android:layout_width="35dp"
                 android:layout_height="40dp"
@@ -61,9 +50,8 @@
                 android:backgroundTint="@color/primary"
                 android:layout_marginRight="20dp"
                 app:cornerRadius="5dp"/>
-
-
         </LinearLayout>
+
 
         <!--  start data notifikasi -->
         <ScrollView
@@ -84,30 +72,58 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:gravity=""
+                    android:gravity="left"
                     android:padding="15dp"
-                    android:background="@drawable/guru_notification_card1"
                     android:text="Anda mendapat tawaran baru untuk mengajar,
 segera lakukan konfirmasi untuk..."
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     />
-
-                <!-- data 2 -->
+                <!--       waktu         -->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:gravity=""
-                    android:padding="15dp"
-                    android:background="@drawable/guru_notification_card2"
-                    android:text="Anda mendapat tawaran baru untuk mengajar,
-segera lakukan konfirmasi untuk..."
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="5 min ago"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
                     />
+                <!--garis panjang-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BAC3E1" />
+
+
+            <!-- data 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="Anda mendapat tawaran baru untuk mengajar,
+segera lakukan konfirmasi untuk..."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <!--       waktu         -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="15 min ago"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <!--garis panjang-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#BAC3E1" />
+
             </LinearLayout>
         </ScrollView>
         <!--  end data notifikasi -->
