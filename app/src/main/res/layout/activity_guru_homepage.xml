@@ -105,7 +105,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/guru"
-                app:civ_border_color="#00000000"
+                app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />
 
             <!--text selamat datang-->
@@ -129,7 +129,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="130dp"
                     android:text="Bq. Puspita Sari"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     />
@@ -204,7 +204,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/guru"
-                        app:civ_border_color="#00000000"
+                        app:civ_border_color="#FF000000"
                         app:civ_border_width="2dp" />
 
                     <LinearLayout
@@ -323,9 +323,10 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
-                    app:cardBackgroundColor="#10ffffff"
+                    app:cardBackgroundColor="#F4F4F4"
+                    app:cardElevation="5dp"
                     app:cardCornerRadius="10dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="20dp"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -334,7 +335,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/guru"
-                        app:civ_border_color="#00000000"
+                        app:civ_border_color="#FF000000"
                         app:civ_border_width="2dp" />
 
                     <LinearLayout
@@ -448,6 +449,400 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+                <!-- card view scroll 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#F4F4F4"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/guru"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Budi Hartanto"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="alamat ... "
+                            android:alpha="0.5"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="185dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:text="Progress"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Due Time"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="185dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="7/8"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="November 29, 2023"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view scroll 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#F4F4F4"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/guru"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Budi Hartanto"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="alamat ... "
+                            android:alpha="0.5"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="185dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:text="Progress"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Due Time"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="185dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="7/8"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="November 29, 2023"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view scroll 5 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#F4F4F4"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/guru"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Budi Hartanto"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="alamat ... "
+                            android:alpha="0.5"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="185dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:text="Progress"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Due Time"
+                                        android:alpha="0.5"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="185dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="7/8"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="November 29, 2023"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
         </ScrollView>
