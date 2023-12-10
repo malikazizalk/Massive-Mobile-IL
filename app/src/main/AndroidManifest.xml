@@ -22,6 +22,9 @@
             android:name=".SiswaProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".SiswaHomepageRekrutBayarActivity"
+            android:exported="false" />
+        <activity
             android:name=".SiswaHomepageInformasiGuruActivity"
             android:exported="false" />
         <activity
@@ -84,6 +87,7 @@
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
