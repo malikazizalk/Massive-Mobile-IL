@@ -6,20 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo_lesung"
-        app:civ_border_color="@color/secondary"
-        app:civ_border_width="2dp"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo_lesung"
         app:layout_constraintBottom_toTopOf="@+id/tv_splash_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <TextView
         android:id="@+id/tv_splash_1"
@@ -30,14 +26,13 @@
         android:fontFamily="sans-serif-medium"
         android:text="LesUng"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textSize="33dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_splash_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.932" />
 
     <TextView
         android:id="@+id/tv_splash_2"
@@ -45,10 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Selamat datang di LesUng, tempat terbaik untuk
-menemukanguru les berkualitas yang sesuai dengan kebutuhan
-preferensi anda. Kami menyediakan platform yang memudahkan anda
-menemukan apa yang anda butuhkan"
+        android:text="Selamat datang di LesUng, tempat terbaik untuk menemukan guru les berkualitas yang sesuai dengan kebutuhan preferensi anda. Kami menyediakan platform yang memudahkan anda menemukan apa yang anda butuhkan"
         android:textAlignment="center"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -57,20 +49,18 @@ menemukan apa yang anda butuhkan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.617" />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:text="Start"
-        android:textSize="20sp"
-        app:cornerRadius="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_splash_2"
-        app:layout_constraintVertical_bias="0.403" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Mulai"-->
+<!--        android:textSize="20sp"-->
+<!--        app:cornerRadius="60dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_splash_2" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

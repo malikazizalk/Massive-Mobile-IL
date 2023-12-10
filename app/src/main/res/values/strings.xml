@@ -2,4 +2,26 @@
     <string name="app_name">Massive_LesUng</string>
     <string name="select">Pilih Sebagai</string>
     <string name="lorem">Lorem</string>
+
+<!-- Payment -->
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_2520231298">2520231298</string>
+    <string name="lbl_payment_options">Payment Options</string>
+    <string name="msg_teknologi_infor">Teknologi Informasi dan Komputer</string>
+    <string name="lbl_account_name">Account name</string>
+    <string name="lbl_bri_bank">BRI Bank</string>
+    <string name="total_payment">Total Payment                                       </string>
+    <string name="lbl_account_number">Account number</string>
+    <string name="msg_puspita_sari_de">Puspita Sari Dewi</string>
+    <string name="lbl_bank_transfer">Bank Transfer</string>
+    <string name="lbl_rp_180_000">Rp.180.000</string>
+    <string name="confirm">Confirm </string>
+    <string name="lbl_logicliberators">LogicLiberators</string>
+    <string name="msg_make_transfer_t">Make transfer to the account details provided </string>
+    <string name="lbl_8_sessions_mo">8 Sessions/mo</string>
+    <string name="lbl_3_desember_2023">3 Desember 2023</string>
+    <string name="lbl_bank_name">Bank Name</string>
+    <string name="msg_alrt">Only confirm if you have made transfer</string>
+    <string name="subtotal">Subtotal</string>
 </resources>
