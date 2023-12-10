@@ -474,8 +474,7 @@ consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
                                 android:layout_height="match_parent"
                                 android:gravity=""
                                 android:layout_marginLeft="10dp"
-                                android:text="Lorem ipsum dolor sit amet,
-consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
+                                android:text="Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
                                 android:textSize="15sp"
                                 android:textStyle="bold"
                                 />
@@ -490,11 +489,11 @@ consectetur adipiscing elit. Donec ornare ut diam ut eleifend. Nam."
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:backgroundTint="#F4F4F4"
-                                    android:paddingLeft="-10dp"
+                                    android:paddingStart="-10dp"
                                     android:paddingTop="10dp"
                                     android:drawableTop="@drawable/arrow_next"
                                     app:cornerRadius="5dp"
-                                    />
+                                    tools:ignore="RtlSymmetry" />
 
                             </RelativeLayout>
 

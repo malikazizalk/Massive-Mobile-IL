@@ -157,10 +157,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="match_parent"
@@ -172,21 +168,16 @@
                     android:backgroundTint="@color/white"
                     app:strokeColor="@color/primary"
                     app:strokeWidth="1dp"
-                    android:drawableTop="@drawable/google_icon">
-
-
-                </com.google.android.material.button.MaterialButton>
-            </RelativeLayout>
+                    android:drawableTop="@drawable/google_icon" />
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:gravity="center">
+                android:layout_gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"

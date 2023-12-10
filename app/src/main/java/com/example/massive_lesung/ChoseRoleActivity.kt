@@ -1,27 +1,37 @@
 package com.example.massive_lesung
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
+import com.example.massive_lesung.databinding.ActivityChoseRoleBinding
+import com.google.firebase.auth.FirebaseAuth
 
-class ChoseRoleActivity : AppCompatActivity(), View.OnClickListener {
+class ChoseRoleActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityChoseRoleBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var grouprole: LinearLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_chose_role)
-        val asTeacher: LinearLayout = findViewById(R.id.role_teacher)
-        asTeacher.setOnClickListener(this)
-    }
-    override fun onClick(v: View) {
-        when (v.id) {
-            R.id.role_teacher -> {
-                val teacher = Intent(this@ChoseRoleActivity, LengkapiDokumenActivity::class.java)
-                startActivity(teacher)
-            }
+        binding = ActivityChoseRoleBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
+        grouprole = findViewById(R.id.grouprole)
+
+        binding.grouprole.setOnClickListener{
 
         }
+
     }
+//    override fun onClick(v: View) {
+//        when (v.id) {
+//            R.id.role_teacher -> {
+//                val teacher = Intent(this@ChoseRoleActivity, LengkapiDokumenActivity::class.java)
+//                startActivity(teacher)
+//            }
+//
+//
+//        }
+//    }
 }

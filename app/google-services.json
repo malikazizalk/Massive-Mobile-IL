@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55300629997",
+    "project_id": "lesungapp",
+    "storage_bucket": "lesungapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55300629997:android:5fa0a7d25103473dc273e4",
+        "android_client_info": {
+          "package_name": "com.example.massive_lesung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATk7q1Mbpc4ifKd-DJ-LZjtvc32u5zCuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
