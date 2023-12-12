@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Massive_LesUng"
         tools:targetApi="31">
         <activity
+            android:name=".PaymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".SiswaCompleteLes"
+            android:exported="false" />
+        <activity
+            android:name=".SiswaProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SiswaHomepageRekrutBayarActivity"
+            android:exported="false" />
+        <activity
             android:name=".SiswaHomepageInformasiGuruActivity"
             android:exported="false" />
         <activity
@@ -49,9 +61,6 @@
             android:name=".GuruPenilaianSiswaDidikActivity"
             android:exported="false" />
         <activity
-            android:name=".GuruPenialaianSiswaDidikActivity"
-            android:exported="false" />
-        <activity
             android:name=".GuruKelasBerlangsungKonfirmasiActivity"
             android:exported="false" />
         <activity
@@ -64,34 +73,16 @@
             android:name=".GuruNotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".GuruNotoficationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NotificationGuruActivity"
-            android:exported="false" />
-        <activity
             android:name=".chat"
             android:exported="false" />
         <activity
             android:name=".daftarchat"
             android:exported="false" />
         <activity
-            android:name=".Profile2"
-            android:exported="false" />
-        <activity
-            android:name=".HomepageGuruActivity"
-            android:exported="false" />
-        <activity
-            android:name=".profile"
-            android:exported="false" />
-        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
             android:name=".SigninActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"

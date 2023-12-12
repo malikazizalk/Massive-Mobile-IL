@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="btnSolidRounded">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_bg_white_100_radius_tl_20_tr_20</item>
+    </style>
+    <style name="txtPoppinslight13_1">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="groupStylecornerRadius_1">
+        <item name="android:background">@drawable/rectangle_radius_10</item>
+    </style>
+    <style name="txtPoppinsbold15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black_grey</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStylecornerRadius">
+        <item name="android:background">@drawable/rectangle_radius_2_5</item>
+    </style>
+    <style name="groupStylewhite_100cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_white_100_radius_tl_20_tr_20</item>
+    </style>
+    <style name="txtPoppinsextrabold15">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+    </style>
+    <style name="txtPoppinslight10">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="groupStylePrimary">
+        <item name="android:background">@drawable/rectangle_bg_primary</item>
+    </style>
+    <style name="groupStyleSecondary">
+        <item name="android:background">@color/secondary</item>
+    </style>
+    <style name="txtPoppinssemibold13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+    <style name="txtPoppinslight12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_grey</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="txtPoppinslight13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+    <style name="groupStylegray_1">
+        <item name="android:background">@drawable/rectangle_bg_white_100_radius_15</item>
+    </style>
+    <style name="radius_20">
+        <item name="android:background">@drawable/radius_20_white</item>
+    </style>
+    <style name="txtPoppinssemibold12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+    <style name="txtPoppinsmedium10">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SiswaCompleteLes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--    top notifikasi    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!--arrow back-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:drawableTop="@drawable/arrow_back"
+                app:cornerRadius="5dp"
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:text="Complete"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="-29dp"
+                android:backgroundTint="@color/primary"
+                android:layout_marginRight="20dp"
+                app:cornerRadius="5dp"/>
+        </LinearLayout>
+
+
+        <!--  start data notifikasi -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- card view scroll 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="135dp"
+                    app:cardBackgroundColor="#10ffffff"
+                    app:cardCornerRadius="10dp"
+                    android:gravity="center">
+                    <!--circle image-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/guru"
+                        app:civ_border_color="#00000000"
+                        app:civ_border_width="1dp" />
+                    <!--isi card-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!--nama-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="130dp"
+                            android:text="Puspita Sari Dewi"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+                        <!--pelajaran-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="130dp"
+                            >
+                            <!-- icon -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableStart="@drawable/icon_lesson"
+                                android:textSize="14sp"
+                                />
+                            <!-- nama pelajaran -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Teknologi Informasi dan Komunikasi"
+                                android:textSize="12sp"
+                                />
+                        </LinearLayout>
+                        <!--jumlah sesi-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="130dp">
+                            <!-- icon -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableStart="@drawable/icon_lesson"
+                                android:textSize="14sp"
+                                />
+                            <!-- nama pelajaran -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="1 out of 8 Session"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                        <!--bar progres-->
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="25dp">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                android:layout_width="300dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:visibility="visible"
+                                android:background="@color/primary"
+                                android:progressDrawable="@drawable/rounded_progress_bar"
+                                style="?android:attr/progressBarStyleHorizontal" />
+
+<!--                                android:indeterminateDrawable="@drawable/progres_bar" />-->
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+        <!--  end data notifikasi -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

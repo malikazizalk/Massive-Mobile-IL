@@ -167,6 +167,7 @@ looking for a student"
                 >
                 <!-- card view -->
                     <LinearLayout
+                        android:id="@+id/role_teacher"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -179,7 +180,6 @@ looking for a student"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"/>
                         <com.google.android.material.button.MaterialButton
-                            android:id="@+id/roleStudent"
                             android:layout_width="75dp"
                             android:layout_height="83dp"
                             app:cornerRadius="50dp"
