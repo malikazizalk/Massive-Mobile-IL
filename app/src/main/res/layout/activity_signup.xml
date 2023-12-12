@@ -12,38 +12,39 @@
     <LinearLayout
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:padding="3dp"
+        android:layout_above="@+id/card_view"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="25dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/button_signin_signup"
-        >
+        android:orientation="horizontal"
+        android:padding="3dp">
 
         <!--button sign in -->
         <com.google.android.material.button.MaterialButton
             android:layout_width="177dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:paddingTop="5dp"
             android:backgroundTint="#00000000"
+            android:paddingTop="5dp"
             android:text="Sign In"
             android:textColor="#616C8F"
-            android:textStyle="bold"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:cornerRadius="50dp" />
         <!--button sign up-->
         <com.google.android.material.button.MaterialButton
-            android:layout_width="177dp"
+            android:layout_width="158dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:paddingTop="5dp"
             android:backgroundTint="@color/primary"
+            android:paddingTop="5dp"
             android:text="Sign Up"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="20sp"
-            app:cornerRadius="50dp" />
+            android:textStyle="bold"
+            app:cornerRadius="60dp" />
     </LinearLayout>
 
 
@@ -74,7 +75,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_nama"
+                    android:id="@+id/edtnama"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textPersonName"/>
@@ -93,7 +94,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_email"
+                    android:id="@+id/edtemail"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="textEmailAddress"/>
@@ -113,7 +114,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:boxStrokeWidth="1dp">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_number"
+                    android:id="@+id/edtNumber"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:inputType="number"/>
@@ -127,15 +128,16 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
                 android:textColorHint="@color/primary"
                 app:boxStrokeColor="@color/primary"
-                app:boxStrokeWidth="1dp">
+                app:boxStrokeWidth="1dp"
+                app:passwordToggleEnabled="true">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_pass"
+                    android:id="@+id/edtpass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:inputType="textVisiblePassword"/>
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--Password-->
@@ -149,12 +151,13 @@
                 android:hint="Confirm Password"
                 android:textColorHint="@color/primary"
                 app:boxStrokeColor="@color/primary"
-                app:boxStrokeWidth="1dp">
+                app:boxStrokeWidth="1dp"
+                app:passwordToggleEnabled="true">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/comfirmpass"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:inputType="textVisiblePassword"/>
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <View
@@ -162,12 +165,12 @@
                 android:layout_height="30dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_signup"
+                android:id="@+id/btnsignup"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:textSize="20sp"
-                android:text="Sign Up"
+                android:text="Next"
                 app:cornerRadius="60dp"
                 />
 
@@ -176,10 +179,10 @@
                 android:layout_height="15dp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:gravity="center">
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,13 +192,13 @@
                     android:text="Already have an account?"/>
 
                 <TextView
+                    android:id="@+id/signin"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:text="Sign In"
-                    />
+                    android:text="Sign In" />
             </LinearLayout>
 
             <View

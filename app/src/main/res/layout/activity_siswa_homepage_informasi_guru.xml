@@ -406,8 +406,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
             android:textSize="15sp"
             app:cornerRadius="60dp" />
 
+                    </LinearLayout>
 
-    </LinearLayout>
-    <!-- start liniear layout entire screen  -->
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>

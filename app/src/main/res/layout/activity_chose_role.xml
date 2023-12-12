@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ChoseRoleActivity">
 
+
     <!-- start liniear layout entire screen  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
 
         <!--    button top    -->
         <LinearLayout
@@ -26,7 +26,7 @@
                 android:layout_height="40dp"
                 android:gravity="center"
                 android:backgroundTint="@color/white"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:drawableTop="@drawable/arrow_back"
                 app:cornerRadius="5dp"
                 />
@@ -44,13 +44,12 @@
                 android:layout_height="40dp"
                 android:gravity="center"
                 android:layout_marginTop="-29dp"
-                android:backgroundTint="@color/primary"
                 android:layout_marginRight="20dp"
                 app:cornerRadius="5dp"/>
         </LinearLayout>
 
 
-        <!--    ll kelas berlangsung    -->
+        <!--    ll choose role    -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,8 +74,7 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Are you looking for a teacher or
-looking for a student"
+                android:text="Are you looking for a teacher or looking for a student"
                 android:layout_gravity="center"
                 android:textColor="#90000000"
                 android:textSize="16sp"
@@ -88,14 +86,16 @@ looking for a student"
         <View
             android:layout_width="wrap_content"
             android:layout_height="40dp"/>
-        <LinearLayout
+
+        <RadioGroup
+            android:id="@+id/grouprole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
 
             <!--    card role student      -->
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/chose_role"
@@ -104,6 +104,7 @@ looking for a student"
                 >
                 <!-- card view -->
                 <LinearLayout
+                    android:id="@+id/roleOrtu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -155,7 +156,7 @@ looking for a student"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"/>
                 </LinearLayout>
-            </RelativeLayout>
+            </LinearLayout>
 
             <!--    card role student      -->
             <RelativeLayout
@@ -221,7 +222,7 @@ looking for a student"
                     </LinearLayout>
                 </RelativeLayout>
 
-        </LinearLayout>
+        </RadioGroup>
 
 
     </LinearLayout>

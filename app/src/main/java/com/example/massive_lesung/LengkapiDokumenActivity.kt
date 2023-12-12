@@ -2,11 +2,14 @@ package com.example.massive_lesung
 
 import android.app.Dialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.widget.Button
+
+import androidx.appcompat.app.AppCompatActivity
+import com.example.massive_lesung.ui.profil.ProfileFragment
+
 import android.widget.TextView
 
 class LengkapiDokumenActivity : AppCompatActivity(){
@@ -17,6 +20,7 @@ class LengkapiDokumenActivity : AppCompatActivity(){
 //        val btnSubmit: Button = findViewById(R.id.btn_submit)
 //        btnSubmit.setOnClickListener(this)
 //    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +50,7 @@ class LengkapiDokumenActivity : AppCompatActivity(){
         }
 
         buttonAgree.setOnClickListener {
-                val intent = Intent(this@LengkapiDokumenActivity, GuruHomepageActivity::class.java)
+                val intent = Intent(this@LengkapiDokumenActivity, MainActivityGuru::class.java)
                 startActivity(intent)
 
         }
