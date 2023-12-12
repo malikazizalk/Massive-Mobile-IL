@@ -26,6 +26,7 @@ tools:context=".GuruEditProfileActivity">
 
         <!--arrow back-->
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/back"
             android:layout_width="35dp"
             android:layout_height="40dp"
             android:gravity="center"

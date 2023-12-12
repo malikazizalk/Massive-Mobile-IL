@@ -4,28 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuruProfileActivity">
+    android:background="@color/primary"
+    tools:context=".ui.profil.ProfileFragment">
 
 
-    <!-- start bottom navbar  -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView3"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        android:paddingLeft="50dp"
-        android:paddingTop="5dp"
-        android:paddingRight="50dp"
-        app:itemActiveIndicatorStyle="@style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator"
-        app:itemIconSize="35dp"
-        app:itemIconTint="@color/primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_guru" />
-
-    <!--    ll kelas berlangsung    -->
     <LinearLayout
+        android:id="@+id/atas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="40dp"
@@ -42,18 +26,18 @@
             android:orientation="horizontal">
 
             <!--arrow back-->
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="35dp"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:backgroundTint="@color/primary"
-                android:layout_marginLeft="20dp"
-                android:drawableTop="@drawable/arrow_back_white"
-                app:cornerRadius="5dp"
-                />
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:gravity="center"-->
+<!--                android:backgroundTint="@color/primary"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:drawableTop="@drawable/arrow_back_white"-->
+<!--                app:cornerRadius="5dp"-->
+<!--                />-->
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textColor="@color/white"
@@ -63,7 +47,7 @@
 
             <!--arrow back-->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_edit"
+                android:id="@+id/editprofile"
                 android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:gravity="center"
@@ -98,11 +82,12 @@
             android:background="@color/primary"
             android:orientation="vertical">
 
+            <!-- Fullname -->
             <TextView
+                android:id="@+id/fullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Bq. Puspita Sari Dewi"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="16sp"
@@ -126,9 +111,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_height="630dp"
         app:cardCornerRadius="28dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView3"
+        app:layout_constraintTop_toBottomOf="@+id/atas"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -148,12 +133,13 @@
                     android:layout_marginLeft="10dp"
                     android:drawableEnd="@drawable/icon_nomor_telepon" />
 
+                <!-- Phone Number -->
                 <TextView
+                    android:id="@+id/phone"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:gravity="center_vertical"
-                    android:text="+62 8137xxxx008"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -174,13 +160,14 @@
                     android:layout_marginLeft="10dp"
                     android:drawableEnd="@drawable/icon_lokasi" />
 
+                <!-- Address -->
                 <TextView
+                    android:id="@+id/address"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:gravity="center_vertical"
-                    android:text="PRMH Alam Puncak Raya Jln
-Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
+                    android:hint=" - address"
                     android:textSize="16sp"
                     android:textStyle="italic" />
             </LinearLayout>
@@ -201,19 +188,19 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                     android:drawableEnd="@drawable/icon_kartu_atm" />
 
                 <TextView
-                    android:id="@+id/edt_email"
+                    android:id="@+id/bankacc"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/edit_text"
                     android:drawableEnd="@drawable/icon_hide_password"
                     android:gravity="center_vertical"
+                    android:hint=" - "
                     android:inputType="textPersonName"
                     android:paddingLeft="20dp"
                     android:paddingTop="5dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="5dp"
-                    android:text="xxx-xxxx-xxxx"
                     android:textSize="19sp"
                     android:textStyle="bold" />
 
@@ -253,7 +240,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="30dp" />
+                android:layout_height="45dp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -267,7 +254,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="-20dp"
+                    android:layout_marginLeft="-17dp"
                     android:drawableEnd="@drawable/icon_about_us" />
 
                 <TextView
@@ -291,7 +278,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="-20dp"
+                    android:layout_marginLeft="-17dp"
                     android:drawableEnd="@drawable/icon_pusat_bantuan" />
 
                 <TextView
@@ -308,6 +295,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 android:layout_height="10dp" />
 
             <LinearLayout
+                android:id="@+id/logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
@@ -315,7 +303,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="-20dp"
+                    android:layout_marginLeft="-17dp"
                     android:drawableEnd="@drawable/icon_keluar" />
 
                 <TextView
@@ -333,9 +321,7 @@ Bougenville No ZX-25, Sukapada, Bandung, Jawa Barat"
                 android:layout_height="10dp" />
 
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

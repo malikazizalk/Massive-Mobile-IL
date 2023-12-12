@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/nphome"
+        android:name="com.example.massive_lesung.ui.home.HomeFragment"
+        android:label="fragment_home_guru"
+        tools:layout="@layout/fragment_home_guru" />
+
+    <fragment
+        android:id="@+id/npchats"
+        android:name="com.example.massive_lesung.ui.pchats.ChatFragment"
+        android:label="fragment_chats_guru"
+        tools:layout="@layout/fragment_chats_guru" />
+
+    <fragment
+        android:id="@+id/npprofile"
+        android:name="com.example.massive_lesung.ui.profil.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_guru" />
+
+</navigation>

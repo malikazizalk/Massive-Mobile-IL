@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/button_home"
+        android:id="@+id/guruHomepageActivity"
         android:title=""
         android:icon="@drawable/icon_home_stroke"/>
 
     <item
-        android:id="@+id/button_message"
+        android:id="@+id/daftarchat"
         android:title=""
         android:icon="@drawable/icon_chat_stroke"/>
 
@@ -16,7 +16,7 @@
         android:icon="@drawable/icon_notification_stroke"/>
 
     <item
-        android:id="@+id/button_user"
+        android:id="@+id/guruProfileActivity"
         android:title=""
         android:icon="@drawable/icon_profile_stroke"/>
 </menu>

@@ -56,34 +56,5 @@ class SignupActivity : AppCompatActivity() {
             }
         }
 
-//        etUsername = findViewById(R.id.edtnama)
-//        etemail = findViewById(R.id.edt_email)
-//        etPassword = findViewById(R.id.edt_pass)
-//        etnohp = findViewById(R.id.edt_number)
-//        etComfirmPassword = findViewById(R.id.comfirmpass)
-
-//        val btnSignup1: Button = findViewById(R.id.btnsignup)
-//        btnSignup1.setOnClickListener(this)
-//    }
-//
-//    override fun onClick(v: View) {
-//        when(v.id){
-//            R.id.btnsignup-> {
-//
-//                val bundle = Bundle()
-////                bundle.putString("Username", etUsername.text.toString())
-////                bundle.putString("Email", etemail.text.toString())
-////                bundle.putString("No hp", etnohp.text.toString())
-////                bundle.putString("Password", etPassword.text.toString())
-////                bundle.putString("Konirmasi Password", etComfirmPassword.text.toString())
-//
-//
-//                val intent = Intent(this@SignupActivity, SigninActivity::class.java)
-//                intent.putExtras(bundle)
-//                startActivity(intent)
-//            }
-//        }
-//
-//
     }
 }
