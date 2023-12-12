@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+
+    <TextView
+            android:id="@+id/txt_message_tsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="I agree to the Terms of Service and Conditions of Use including consent to electronic communications and I affirm that the information provided is my own."
+            android:textColor="#78828A"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_agree"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:text="Agree and continue"
+                android:textSize="15sp"
+                app:cornerRadius="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_disgree"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:text="Disgree"
+                android:textColor="#FF4747"
+                android:backgroundTint="#00000000"
+                android:textSize="15sp"
+                app:cornerRadius="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
